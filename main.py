@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from __future__ import print_function
 import boto3
 import json
@@ -28,5 +27,5 @@ def lambda_handler(event,context):
         )
     except Exception as e:
         print(e)
-        print('Error getting object {} from bucket {} make sure they exist and your bucket name is correct')
+        print('Some error has occured')
         raise e
